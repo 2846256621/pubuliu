@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            position: absolute;
+            top:25%;
+            left:35%;
+            width: 600px;
+            height: 400px;
+            border: 1px solid #949595;
+            box-shadow: 0 0 8px #cccccc;
+
+        }
+        ul{
+            position:relative;
+            list-style-type: none;
+        }
+        li{
+            position: absolute;
+            padding: 20px;
+            overflow: hidden;
+            opacity: 1;
+            transition: 1s;
+        }
+        img{
+            width: 560px;
+            height: 350px;
+            box-shadow: 0 0 8px #cccccc;
+        }
+        .btn{
+            width: 50px;
+            height: 80px;
+            top:180px;
+            position: absolute;
+            text-align: center;
+            line-height: 60px;
+            background-color: transparent;
+        }
+        .btn:hover{
+            background-color: rgba(0,0,0,0.2);
+        }
+        .mycss{
+            font-size: 30px;
+            color: #949595;
+            line-height: 80px;
+        }
+        #next{
+            right: 15px;
+        }
+
+    </style>
+    <link href="lunbotu/iconfont.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="container">
+    <ul>
+        <li><img src="image/99.jpg"></li>
+        <li><img src="image/2.jpg"></li>
+        <li><img src="image/3.jpg"></li>
+        <li><img src="image/4.jpg"></li>
+        <li><img src="image/1.jpg"></li>
+        <li><img src="image/38.jpg"></li>
+        <li><img src="image/7.jpg"></li>
+        <li><img src="image/8.jpg"></li>
+        <li><img src="image/53%20(2).jpg"></li>
+        <li><img src="image/10.jpg"></li>
+        <li><img src="image/18.jpg"></li>
+        <li><img src="image/11.jpg"></li>
+        <li><img src="image/98.jpg"></li>
+        <li><img src="image/47.jpg"></li>
+        <li><img src="image/14.jpg"></li>
+    </ul>
+    <div id="prev" class="btn" onclick="prev()"><i class="iconfont icon-houtui1 mycss"></i></div>
+    <div id="next" class="btn" onclick="next()"><i class="iconfont icon-qianjin1 mycss"></i></div>
+</div>
+<script>
+    var i=0;
+    var lis = document.getElementsByTagName("li");
+    function  next() {
+        i++;
+        if(i == lis.length){
+            i = 0;
+        }
+        for(var j=0;j<lis.length;j++){
+            lis[j].style.opacity = 0;
+        }
+        lis[i].style.opacity = 1;
+    }
+    // var time = setInterval("settime()",1000);
+    function  prev() {
+        i--;
+        if(i == -1){
+            i = lis.length;
+        }
+        for(var j=0;j<lis.length;j++){
+            lis[j].style.opacity = 0;
+        }
+        lis[i].style.opacity = 1;
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<style type="text/css">-->
+        <!--div{-->
+            <!--background-color: #c0ba7f;-->
+            <!--border: 1px solid;-->
+            <!--width: 200px;-->
+            <!--height: 200px;-->
+            <!--float: left;-->
+            <!--/*clear: both;*/-->
+            <!--/*position:absolute;*/-->
+            <!--/*left: 50%;*/-->
+            <!--/*top:50%;*/-->
+            <!--/*margin-left:-100px;*/6-->
+            <!--/*margin-top: -100px;*/-->
+            <!--line-height: 200px;-->
+            <!--text-align: center;-->
+        <!--}-->
+    <!--</style>-->
+</head>
+ <body>
+
+ <!--<div>-->
+     <!--等你来-->
+ <!--</div>-->
+ <!--<p> 大千世界，人海茫茫</p>-->
+<!--<form method="get">-->
+    <!--日期：<input type="date" name="user_date" >-->
+    <!--<input type="submit">-->
+<!--<form method="get">-->
+ <!--输入：<input type="url" id="url_list" name="link">-->
+ <!--<datalist id="url_list">-->
+     <!--<option label="W3School" value="http://www.W3School.com.cn" />-->
+     <!--<option label="Google" value="http://www.google.com" />-->
+     <!--<option label="Microsoft" value="http://www.microsoft.com" />-->
+ <!--</datalist>-->
+    <!--<input type="submit" />-->
+<!--</form>-->
+ <!--<form  method="get">-->
+    <!--请输入网址: <input type="url" list="url_list" name="link" />-->
+     <!--<datalist id="url_list">-->
+         <!--<option label="W3School" value="http://www.w3school.com.cn" />-->
+         <!--<option label="Google" value="http://www.google.com" />-->
+         <!--<option label="Microsoft" value="http://www.microsoft.com" />-->
+     <!--</datalist>-->
+     <!--<input type="submit" />-->
+ <!--</form>-->
+ <!--<iframe src="test.html" width="300px" height="300px" frameborder="0" name="iframe_a"n >-->
+ <!--</iframe>-->
+ <!--<a href="html.html" target="view_window">html</a>-->
+ <!--<ul>-->
+     <!--<li><a href="test.html" target="view_frame">Preface</a></li>-->
+     <!--<li><a href="precise.html" target="view_windows">oooooo</a></li>-->
+ <!--</ul>-->
+ <!--<a href="precise.html">-->
+     <!--<img src="image/12.jpg" border="0">-->
+ <!--</a>-->
+ <!--<p>-->
+     <!--<a href="#new">查看 Chapter 4。</a>-->
+ <!--</p>-->
+
+ <!--<h2>Chapter 1</h2>-->
+ <!--<p>This chapter explains ba bla bla</p>-->
+ <!--<h2>Chapter 2</h2>-->
+ <!--<p>This chapter explains ba bla bla</p>-->
+ <!--<h2>Chapter 3</h2>-->
+ <!--<p>This chapter explains ba bla bla</p>-->
+ <!--<h2><a name="new">Chapter 4</a></h2>-->
+ <!--<p>This chapter explains ba bla bla</p>-->
+ <!--<h2>Chapter 5</h2>-->
+ <!--<p>This chapter explains ba bla bla</p>-->
+ <!--<h2>Chapter 6</h2>-->
+ <!--<p>This chapter explains ba bla bla</p>-->
+ <!--<h2>Chapter 7</h2>-->
+ <!--<p>This chapter explains ba bla bla</p>-->
+<script type="text/javascript">
+    let arr = [1, [2, [3], 4], 5] ;
+    let brr = [];
+    for(let i =0;i<arr.length;i++){
+        brr.push(arr[i]);
+        for(let j = 0;j<arr[i].length;j++){
+            // for(let k = 0; k<arr[j].length ;k++)
+                    brr.push(arr[i][j]);
+        }
+    }
+    console.log(brr);
+    // var str="hello world!"
+    // console.log(str.replace(/hello/,"W3School"));
+    // let str1="hello";
+    // let str2 ="heoll";
+    // let flag = 0 ;
+    // str1 = str1.split('').toUpperCase();
+    // str2 = str2.split('').toUpperCase();
+    // let arr =[str1,str2];
+    // function func(arr){
+    //     arr[0].forEach(function(item,index,arr){
+    //         if(arr[1].indexOf(index))
+    //             flag = -1;
+    //     });
+    //     if(flag < 0)
+    //         return true;
+    //     else
+    //         return false;
+    // }
+    // console.log(func([str1,str2]));
+      //   let str1 ="not an apple";
+      //   let str2 = "le";
+      //   function func(str1,str2) {
+      //       for(let i =0;i<str1.length;i++)
+      //       {
+      //           if(str1[i] === str2[0]){
+      //               if(str1.substr(i,str1.length) === str2) {
+      //                   return true;
+      //               }
+      //           }
+      //       }
+      //       return false;
+      // }
+      //   console.log(func(str1,str2));
+
+    // var arr = ["b","A","c"];
+    // arr.sort(function (x,y) {
+    //     s= x.toUpperCase();
+    //     s1 = y.toUpperCase();
+    //     if (s>s1)
+    //         return 1;
+    //     if(s<s1)
+    //         return -1;
+    //     return 0;
+    // });
+    // alert(arr);
+    //从大到小排序
+    // var arr = [23,47,34,21];
+    // arr.sort(function(x,y){
+    //     if(x>y)  return -1;
+    //     if(x<y)  return 1;
+    //     return 0;
+    // });
+    // console.log(arr);
+    //从小到大排序
+    // arr.sort(function (x, y) {
+    //     if (x < y) {
+    //         return -1;
+    //     }
+    //     if (x > y) {
+    //         return 1;
+    //     }
+    //     return 0;
+    // });
+    // console.log(arr); // [1, 2, 10, 20]
+    // var time = new Date();
+    // var now = new Date();
+    // console.log(now) ;
+    // console.log(now.getFullYear()); // 2015, 年份
+    // console.log(now.getMonth()); // 5, 月份，注意月份范围是0~11，5表示六月
+    // console.log(now.getDate()) ; // 24, 表示24号
+    // console.log(now.getDay()); // 3, 表示星期三
+    // console.log( now.getHours()); // 19, 24小时制
+    // console.log(now.getMinutes()) ; // 49, 分钟
+    // console.log(now.getSeconds()) ; // 22, 秒
+    // console.log( now.getMilliseconds()); // 875, 毫秒数
+    // console.log(now.getTime()); // 1435146562875, 以number形式表示的时间戳
+    // var  d = new Date(2018,6,24,14,35,12,231);
+    // console.log(d);
+</script>
+
+
+
+ </body>
+</html>

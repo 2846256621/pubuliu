@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本框设置</title>
+    <style type="text/css">
+       div{
+           position:absolute;
+           top:30%;
+           left:30%;
+       }
+    </style>
+</head>
+<body>
+<!--获取文本框及设置文本框内容-->
+<!--<input type="text"><br>-->
+<!--<input type="text"><br>-->
+<!--<input type="text"><br>-->
+<!--<input type="text"><br>-->
+<!--<input type="text"><br>-->
+<!--<input type="text"><br>-->
+<!--<input type="search"><br>-->
+<!--<input type="button" id="btn" value="按钮">-->
+<!--<script type="text/javascript">-->
+    <!--var inputs = document.getElementsByTagName('input');-->
+    <!--var len = inputs.length;-->
+    <!--var i = 0;-->
+    <!--for(i=0;i<len;i++){-->
+        <!--var input = inputs[i];-->
+        <!--if(input.type !== 'text')-->
+            <!--continue;-->
+        <!--input.value = i + 1;-->
+    <!--}-->
+    <!--var btn = document.getElementById("btn");-->
+    <!--btn.onclick = function () {-->
+        <!--var arr=[];-->
+        <!--for(i = 0;i<len;i++){-->
+            <!--var input = inputs[i];-->
+            <!--if(input.type !== 'text')-->
+                <!--continue;-->
+            <!--arr.push(input.value);-->
+        <!--}-->
+        <!--var str = arr.join('|');-->
+        <!--console.log(str);-->
+    <!--}-->
+<!--</script>-->
+
+
+<!--禁用文本框-->
+<!--<input type="text" id="txt">-->
+<!--<input type="button" id="btn" value="禁用">-->
+<!--<script>-->
+    <!--var btn = document.getElementById("btn");-->
+    <!--// 对按钮注册点击事件-->
+    <!--btn.onclick = function () {-->
+        <!--var txt = document.getElementById("txt");-->
+        <!--txt.disabled = true;//布尔类型的值-->
+    <!--}-->
+<!--</script>-->
+
+<!--设置下拉框中的值-->
+<!--<select id="sel">-->
+    <!--<option>吃饭</option>-->
+    <!--<option>睡觉</option>-->
+    <!--<option>打游戏</option>-->
+    <!--<option>看电视</option>-->
+<!--</select>-->
+<!--<input type="button"  value="随机生成" id="btn">-->
+<!--<script>-->
+    <!--var btn = document.getElementById('btn');-->
+    <!--btn.onclick = function () {-->
+        <!--var sel = document.getElementById('sel');-->
+        <!--var options = sel.getElementsByTagName('option');-->
+        <!--var option = options.length -1;-->
+        <!--var index = Math.round(Math.random()*option);-->
+        <!--console.log(index);-->
+        <!--options[index].selected = true;-->
+    <!--}-->
+<!--</script>-->
+
+
+<!--切换图片-->
+<!--<div>-->
+    <!--<input type="button" value="切换图片" id="btn"><br>-->
+    <!--<img src="image/11.jpg" id="img">-->
+<!--</div>-->
+<!--<script>-->
+    <!--var arr = [-->
+        <!--'image/11.jpg',-->
+        <!--'image/12.jpg',-->
+        <!--'image/13.jpg',-->
+        <!--'image/14.jpg',-->
+        <!--'image/15.jpg',-->
+        <!--'image/23.jpg',-->
+        <!--'image/24.jpg',-->
+        <!--'image/25.jpg'-->
+    <!--];-->
+    <!--var index = 0 ;-->
+    <!--btn.onclick = function () {-->
+        <!--var img = document.getElementById('img');-->
+        <!--index++;-->
+        <!--img.src = arr[index];-->
+        <!--if(index === arr.length - 1)-->
+            <!--index = -1;-->
+    <!--}-->
+
+
+
+</body>
+</html>

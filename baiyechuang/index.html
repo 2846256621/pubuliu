@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百叶窗</title>
+    <link rel="stylesheet" type="text/css" href="css/new.css">
+</head>
+<body>
+<ul>
+    <li>
+        <div>
+            <p>我都寂寞多久了还是没好</p>
+            <p>感觉全世界都在窃窃嘲笑</p>
+        </div>
+    </li>
+    <li>
+        <div>
+            <p>我能有多骄傲 不堪一击好不好</p>
+            <p>一碰到你我就被撂倒</p>
+        </div>
+    </li>
+    <li>
+        <div>
+            <p>吵醒沉睡冰山后从容脱逃</p>
+            <p>你总是有办法轻易做到</p>
+        </div>
+    </li>
+    <li>
+        <div>
+            <p>一个远远的微笑</p>
+            <p>就掀起汹涌波涛</p>
+        </div>
+    </li>
+    <li>
+        <div>
+            <p>又闻到眼泪沸腾的味道</p>
+            <p>只要你敢不懦弱</p>
+        </div>
+    </li>
+    <li>
+        <div>
+            <p>没理由爱不到结果</p>
+            <p>明明你也很爱我</p>
+        </div>
+    </li>
+    <li>
+        <div>
+            <p>又闻到眼泪沸腾的味道</p>
+            <p>明明你也很爱我</p>
+        </div>
+    </li>
+    <li>
+        <div>
+            <p>凭什么我们要错过</p>
+            <p>夜长梦还多</p>
+        </div>
+    </li>
+    <li>
+        <div>
+            <p>你就不要想起我</p>
+            <p>到时候你就知道有多痛</p>
+        </div>
+    </li>
+    <li>
+        <div>
+            <p>那些快乐多难得美好</p>
+            <p>你真的有办法舍得不要</p>
+        </div>
+    </li>
+    <li>
+        <div>
+            <p>才刚成真的美梦</p>
+            <p>转眼就幻灭破掉</p>
+        </div>
+    </li>
+    <li>
+        <div>
+            <p>祝福你真的可以睡得好</p>
+            <p>你就不要 想我到 疯掉
+            </p>
+        </div>
+    </li>
+</ul>
+<script>
+    var i = 0;
+    var divs = document.getElementsByTagName("div");
+    var time;
+    function settime() {
+        divs[i].style.top = 0 +'px';
+        divs[i].style.transition = 0.5+'s';
+        // divs[i].style.height = 20+'px';
+        divs[i].style.backgroundColor = "#bbc4ea";
+        i++;
+    }
+    if(i<divs.length){
+        time = setInterval("settime()",500);
+    }
+    else if(i >= divs.length){
+        clearInterval(time);
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

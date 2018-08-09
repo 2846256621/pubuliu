@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习</title>
+    <!--<style>-->
+        <!--div{-->
+            <!--border: 1px solid;-->
+            <!--background-color: #db9ec9;-->
+            <!--position: absolute;-->
+            <!--left: 30%;-->
+            <!--top:30%;-->
+            <!--width: 110px;-->
+            <!--height: 100px;-->
+            <!--text-align: center;-->
+            <!--line-height: 40px;-->
+            <!--border-radius: 10px;-->
+        <!--}-->
+    <!--</style>-->
+</head>
+<body>
+<!--<div onClick="changeText(this)">点击查看今天心情</div>-->
+<!--<button id="btn">点击查看时间</button>-->
+<!--<p id="p"> </p>-->
+<!--请输入英文字符：<input type="text" id="into" onchange="onchange_s()" onfocus="onfocus_s(this)">-->
+<!--<div onmouseout="mout(this)" onmouseover="mover(this)">我是个有内涵的框框哦</div>-->
+<!--<div id="div">-->
+    <!--<p id="p">这是原来的。</p>-->
+    <!--<p id="p1">这是新加的。</p>-->
+<!--</div>-->
+<!--<input type="button" onclick="disp_prompt()" value="显示提示框" />-->
+
+    <!--function disp_prompt()-->
+    <!--{-->
+        <!--var name=prompt("请输入您的名字","yudangling")-->
+        <!--if (name!=null && name!="")-->
+        <!--{-->
+            <!--document.write("你好！" + name + " 今天过得怎么样？")-->
+        <!--}-->
+    <!--}-->
+
+
+
+
+
+    <!--// document.write(location.href);-->
+    <!--// var child = document.getElementById('p1');-->
+    <!--// var parent = document.getElementById('div');-->
+    <!--// parent.removeChild(child);-->
+    <!--// var p = document.createElement("p");-->
+    <!--// var node = document.createTextNode("这是新增加的");-->
+    <!--// p.appendChild(node);-->
+    <!--// var element = document.getElementById("div");-->
+    <!--// element.appendChild(p);-->
+    <!--// function mout(obj) {-->
+    <!--//     obj.innerHTML="今天天气不错哦！"-->
+    <!--// }-->
+    <!--// function mover(obj) {-->
+    <!--//     obj.innerHTML ="是个学习的好日子哦!"-->
+    <!--// }-->
+  <!--// function onchange_s() {-->
+  <!--//     var x = document.getElementById('into');-->
+  <!--//     x.value = x.value.toUpperCase();-->
+  <!--// }-->
+  <!--// function onfocus_s(x) {-->
+  <!--//     x.style.background = "#31c6c6"-->
+  <!--// }-->
+    <!--// document.getElementById("btn").onclick = function () {displayDate()};-->
+    <!--// function displayDate() {-->
+    <!--//   document.getElementById("p").innerHTML = Date();-->
+    <!--//   document.getElementById('btn').innerHTML = "珍惜时间哦";-->
+    <!--// }-->
+
+    <!--// let gaogao  = [1,[2,[3],4],5];-->
+    <!--// var add=gaogao .toString().split(",");-->
+    <!--// for(var i=0;i<add.length;i++){-->
+    <!--//     add[i]=parseInt(add[i])-->
+    <!--// }-->
+    <!--// console.log(add);-->
+    <!--// function bar(){-->
+    <!--//     return foo;-->
+    <!--//     foo=10;-->
+    <!--//     function  foo(){}-->
+    <!--//     var foo="11";-->
+    <!--//-->
+    <!--// }-->
+    <!--// alert(typeof bar());-->
+    <!--// function aaa(){-->
+    <!--//     return-->
+    <!--//     {-->
+    <!--//         test:1;-->
+    <!--//     };-->
+    <!--// }-->
+    <!--// alert(typeof aaa());-->
+    <!--// let gaogao  = [1,[2,[3],4],5];-->
+    <!--// function over_gaogao (gaogao ){-->
+    <!--//     let brr=[];-->
+    <!--//     function flatten(gaogao ){-->
+    <!--//         for (let i = 0; i < gaogao .length; i++) {-->
+    <!--//             if (gaogao ay.isgaogao ay(gaogao [i])) {-->
+    <!--//                 flatten(gaogao [i]);-->
+    <!--//             }else{-->
+    <!--//                 brr.push(gaogao [i]);-->
+    <!--//             }-->
+    <!--//         }-->
+    <!--//     }-->
+    <!--//     flatten(gaogao );-->
+    <!--//     return brr;-->
+    <!--// }-->
+    <!--// console.log(over_gaogao (gaogao ));-->
+    <!--// let brr = [];-->
+    <!--// for(let i =0;i<gaogao .length;i++){-->
+    <!--//     if(gaogao ay.isgaogao ay(gaogao [i])){-->
+    <!--//         brr.push(gaogao [i]);-->
+    <!--//         for(let j = 0;j<gaogao [i].length;j++){-->
+    <!--//             brr.push(gaogao [i][j]);-->
+    <!--//             if(gaogao ay.isgaogao ay(gaogao [i][j])){-->
+    <!--//                 for(let k = 0;k<gaogao [i][j].length;k++){-->
+    <!--//                     if(gaogao ay.isgaogao ay(gaogao [i][j][k])){-->
+    <!--//                         brr.push(gaogao [i][j][k]);-->
+    <!--//                     }-->
+    <!--//                 }-->
+    <!--//             }-->
+    <!--//         }-->
+    <!--//     }-->
+    <!--// }-->
+
+<!--// </script>-->
+<!--<script>-->
+  <!--let gaogao  = [4, 3, 5, 9, 10];-->
+  <!--let brr = [3, 4, 5, 9, 10];-->
+  <!--let crr = [];-->
+  <!--function min_same(gaogao ,brr) {-->
+      <!--for(let i = 0;i<gaogao .length;i++){-->
+          <!--for(let j= 0;j<brr.length;j++){-->
+              <!--if(gaogao [i] === brr[j]){-->
+                  <!--crr.push(gaogao [i]);-->
+              <!--}-->
+          <!--}-->
+      <!--}-->
+     <!--return  Math.min.apply(null,crr);-->
+  <!--}-->
+  <!--console.log(min_same(gaogao ,brr));-->
+<!--</script>-->
+<!--<script>-->
+    <!--let gaogao  = [];-->
+    <!--function Random_sort() {-->
+        <!--for(let i = 0;i<10;i++)-->
+        <!--{-->
+            <!--let per = Math.floor(Math.random()*90+10);-->
+            <!--gaogao .push(per);-->
+        <!--}-->
+        <!--return  gaogao .sort();-->
+    <!--}-->
+    <!--console.log(Random_sort());-->
+<!--</script>-->
+<!--<input type="text" id="a" value="">-->
+<!--<script type="text/javascript">-->
+    <!--var input=document.getElementById('a');-->
+    <!--var gaogao  =[1,2,4,5,9];-->
+    <!--var item =4;-->
+     <!--function myfuntion(gaogao ,item) {-->
+       <!--for(var i=0;i<gaogao .length;i++) {-->
+           <!--if (gaogao [i] == item) {-->
+               <!--return i;-->
+           <!--}-->
+               <!--}-->
+       <!--}-->
+  <!--}-->
+    <!--input.value=myfuntion(gaogao ,item);-->
+      <!--var input = document.getElementById('a');-->
+      <!--var gaogao  =[1,2,4,5,9];-->
+      <!--var r = gaogao .reduce(function (x,y) {-->
+          <!--return x+y;-->
+      <!--});-->
+    <!--input.value = r;-->
+    <!--var gaogao  =[1,2,4,5,9];-->
+    <!--var item = 4;-->
+    <!--var r = gaogao .filter(function (x) {-->
+        <!--return x != item;-->
+    <!--});-->
+    <!--input.value = r;-->
+<!--</script>-->
+<!--<input type="text" id="a" value="">-->
+<!--<script>-->
+    <!--var input=document.getElementById('a');-->
+    <!--var gaogao  =[1,2,4,5,9];-->
+    <!--var item = 4;-->
+    <!--var r;-->
+    <!--for(var i=0;i<gaogao .length;i++){-->
+        <!--if(gaogao [i] == item)-->
+            <!--r = i;-->
+    <!--}-->
+    <!--var s = gaogao .splice(0,r);-->
+     <!--input.value = s;-->
+    <!--<input type="text" id="a" value="">-->
+
+</body>
+</html>

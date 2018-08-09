@@ -1,0 +1,58 @@
+*::selection{
+    background: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    position: relative;
+    margin: 200px auto;
+    width: 650px;
+    height: 500px;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 1s;
+}
+li:first-child{
+    opacity: 1;
+}
+li img{
+    width: 600px;
+    height: 330px;
+}
+.btn{
+    text-align: center;
+    background-color: rgba(0,0,0,0.2);
+    top:130px;
+    width: 50px;
+    height: 80px;
+    color: #464947;
+    position: absolute;
+    cursor: pointer;
+}
+#prev{
+    left: 0;
+}
+#next{
+    right:50px;
+}
+.btn:hover{
+    background-color: rgba(0,0,0,0.7);
+}
+.btn:active{
+    background-color: rgba(0,0,0,0.5);
+}
+div .mycss{
+    line-height: 80px;
+    font-size: 60px;
+    color: #676665;
+    font-weight: bold;
+}

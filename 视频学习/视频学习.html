@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>视频</title>
+    <style>
+        .bg{
+            /*color: #cccccc;*/
+            background-color: #cccccc;
+        }
+        table{
+            position:absolute;
+            top:40%;
+            left: 40%;
+            width: 400px;
+            height: 200px;
+        }
+        th{
+            width: 30px;
+            height: 30px;
+        }
+        thead{
+            background-color: #31c6c6;
+        }
+        #uncheck{
+            width: 50px;
+            height: 25px;
+            background-color: #949595;
+        }
+    </style>
+</head>
+<body>
+
+
+<!--表单的提交，显示登录提示-->
+<!--<form method="get">-->
+    <!--<input type="text" name="name" id="name"><br>-->
+    <!--<input type="password" name="=password" id="pow"><br>-->
+    <!--<input type="submit" id="sub" value="登录">-->
+<!--</form>-->
+<!--<script>-->
+    <!--document.getElementById("sub").onclick =function (ev) {-->
+        <!--var textname =  document.getElementById("name");-->
+        <!--if(textname.value.length <3 ||textname.value.length >10){-->
+            <!--alert("请输入3-10位数字座位用户名");-->
+            <!--textname.className = "bg";-->
+        <!--}else{-->
+            <!--textname.className ="";-->
+        <!--}-->
+        <!--var powname =  document.getElementById("pow");-->
+        <!--if(powname.value.length <3 ||powname.value.length >=8){-->
+            <!--alert("请输入3-8位数字座位密码");-->
+            <!--powname.className = "bg";-->
+        <!--}else{-->
+            <!--textname.className ="";-->
+        <!--}-->
+
+        <!--return false;-->
+    <!--}-->
+<!--</script>-->
+
+
+
+<!--搜索框的聚焦-->
+<!--<input type="text" value="请输入搜索内容" id="search" class="bg">-->
+<!--<input type="button" value="搜索" id="btn">-->
+<!--<script>-->
+    <!--var textSearch = document.getElementById("search");-->
+    <!--textSearch.onfocus = function (ev) {   //获得焦点-->
+        <!--if(textSearch.value == "请输入搜索内容"){-->
+            <!--textSearch.className = " ";-->
+            <!--textSearch.value ="";-->
+        <!--}-->
+    <!--}-->
+   <!--textSearch.onblur =function (ev) {   //失去焦点-->
+        <!--if(textSearch.value.length === 0){-->
+            <!--textSearch.value = "请输入搜索内容";-->
+            <!--textSearch.className ="bg";-->
+        <!--}-->
+   <!--}-->
+
+<!--</script>-->
+
+<table border="1" cellspacing="0" >
+    <thead>
+    <th>
+        <input type="checkbox" id="sumInput">
+    </th>
+    <th>商品</th>
+    <th>价格</th>
+    </thead>
+    <tbody id="checkboxs">
+    <tr>
+        <th>
+            <input type="checkbox">
+        </th>
+        <th>inphone8</th>
+        <th>8888</th>
+    </tr>
+    <tr>
+        <th>
+            <input type="checkbox">
+        </th>
+        <th>iPad Pro</th>
+        <th>5000</th>
+    </tr>
+    <tr>
+        <th>
+            <input type="checkbox">
+        </th>
+        <th>iPad Air</th>
+        <th>3000</th>
+    </tr>
+    <tr>
+        <th>
+            <input type="checkbox">
+        </th>
+        <th>Apple Watch</th>
+        <th>2000</th>
+    </tr>
+      <th><input type="button" value="反选" id="uncheck"></th>
+    </tbody>
+
+</table>
+<script>
+    var sumtable = document.getElementById("sumInput");//获取父checkbox
+    var checkboxs = document.querySelectorAll("#checkboxs input[type = checkbox] ");
+    // console.log(checkboxs); 获取所有的子checkbox
+    sumtable.onclick = function (ev) {
+       for(var i =0;i<checkboxs.length;i++){
+           var checkbox = checkboxs[i];
+           checkbox.checked = this.checked; //使得每个子checkbox的状态与父checkbox相同
+       }
+    };
+        for(var i=0;i<checkboxs.length;i++){
+            var uncheck =checkboxs[i];
+            uncheck.onclick =function () {
+                var allcheckbox = true;
+                for(var j =0;j< checkboxs.length;j++){
+                    uncheck = checkboxs[i];
+                    if(!checkboxs[i].checked){
+                       allcheckbox = false;
+                       break;
+                    }
+                }
+                sumInput.checked = allcheckbox;
+            }
+    }
+</script>
+</body>
+</html>

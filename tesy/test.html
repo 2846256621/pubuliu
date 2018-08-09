@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #div{
+            position: absolute;
+            top:20%;
+            left:20%;
+        }
+    </style>
+</head>
+<body>
+<div id="div">
+    <h3>选择你最喜欢的图片</h3>
+        <a i="link" href="../image/25.jpg" title="幽灵公主">
+            <img id="img" src="../image/11.jpg" />
+        </a>
+        <a i="link" href="../image/24.jpg" title="龙猫">
+            <img id="img" src="../image/15.jpg" />
+        </a>
+        <a i="link" href="../image/28.jpg" title="魔女宅急便" >
+            <img id="img" src="../image/13.jpg" />
+        </a>
+        <a i="link" href="../image/29.jpg" title="千与千寻">
+            <img id="img" src="../image/14.jpg" />
+        </a>
+        <p id="p"> </p></div>
+        <div style="clear: both;"></div>
+        <img id="img" href="image" width="450"/>
+<script type="text/javascript">
+    var div = document.getElementById("div");
+    var links = div.getElementsByTagName("a");
+    var i=0;
+    var len=links.length;
+    for(; i < len; i++)
+    {
+        var link = links[i];//每个link都设置点击事件
+        link.onclick = function(){   //循环结束才出发事件，所以每个link不一样，用this来表示link，表示当前出发事件
+            var img = document.getElementById("img");
+            var p = document.getElementById("p");
+            img.src = this.href;
+            p.innerText = this.title;
+            return false;
+        }
+    }
+</script>
+</body>
+</html>

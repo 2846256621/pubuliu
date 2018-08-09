@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+   <link rel="stylesheet" type="text/css" href="../newcss/new.css">
+   <!--<script src="../js/time.js"></script>-->
+</head>
+<body>
+<form>
+    <input id="clock" type="text"  >
+    <input type="button" value="点击开始" id="run" onclick="timeCount()">
+    <input type="button" value="点击暂停" id="stop" onclick="timeStop()">
+</form>
+
+<!--<div id="myname"></div>-->
+<script>
+
+        var timecount=0;
+        var newtime;
+        function timeCount(){
+            document.getElementById("clock").value = timecount;
+            timecount++;
+            newtime = setTimeout("timeCount()",1000);
+        }
+        function timeStop() {
+            if(document.getElementById("stop").value ==="点击暂停"){
+                clearInterval(timecount);
+                document.getElementById("run").value ="点击继续";
+            }
+        }
+
+
+
+</script>
+</body>
+</html>

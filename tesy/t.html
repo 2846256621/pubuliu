@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<style>-->
+        <!--div{-->
+            <!--width: 550px;-->
+            <!--height: 300px;-->
+            <!--text-align: center;-->
+            <!--/*background:radial-gradient(circle,rgba(255,0,0,1) ,rgba(0,200,0,0.5)) ;*/-->
+            <!--/*background-image: url("image/11.jpg"),url("image/10.jpg");*/-->
+            <!--/*background-position: right bottom ,left top;*/-->
+            <!--/*background-repeat: no-repeat,repeat;*/-->
+            <!--/*background-size: 150px 100px,550px 300px;*/-->
+            <!--text-shadow: 8px 5px 5px #96539f;-->
+        <!--}-->
+    <!--</style>-->
+</head>
+<!--<body>-->
+<script>
+    // let str1 ="an apple";
+    // let str2 = "apple";
+    // function func(str1,str2) {
+    //     for(let i =0;i<str1.length;i++)
+    //     {
+    //         if(str1[i] === str2[0]){
+    //             if(str1.substr(i,str1.length) === str2){
+    //                 return true;
+    //             }
+    //         }
+    //     }
+    //     return false;
+    // }
+    // console.log(func(str1,str2));
+    // var str1="hello";
+    // var str2 ="hey";
+    // str1 = str1.toUpperCase();
+    // str2 = str2.toUpperCase();
+    // var arr = [str1,str2];
+    // var count1=0;
+    // function func(arr){
+    //     var count=0;
+    //     arr[0]=arr[0].split('');
+    //     arr[1]=arr[1].split('');
+    //     arr[0].forEach(function(item,index){
+    //        arr[1].forEach(function (item1,index1) {
+    //            if(item === item1)
+    //                count++;
+    //        });
+    //         if(count)
+    //             count1++;
+    //     });
+    //     if(count1 === arr[1].length)
+    //         return true;
+    //     else
+    //         return false;
+    // }
+    // console.log(func([str1,str2]));
+</script>
+<!--<script>-->
+    <!--let str1 ="an apple";-->
+    <!--let str2 = "appl";-->
+    <!--function func(str1,str2) {-->
+        <!--for(let i =0;i<str1.length;i++)-->
+        <!--{-->
+            <!--if(str1[i] === str2[0]){-->
+                <!--if(str1.substr(i,str1.length) === str2.substr(0,str2.length)) {-->
+                    <!--return true;-->
+                <!--}-->
+            <!--}-->
+        <!--}-->
+        <!--return false;-->
+    <!--}-->
+    <!--console.log(func(str1,str2));-->
+<!--</script>-->
+<!--<script>-->
+    <!--let arr = [1,5,4,2,3,8,7];-->
+    <!--let num = 2;-->
+    <!--let brr = [];-->
+    <!--function func(arr,num) {-->
+        <!--let flag =num;-->
+        <!--brr.push(arr.slice(0,num).sort());-->
+        <!--while(num<arr.length)-->
+        <!--{-->
+            <!--brr.push(arr.slice(num,num+flag).sort());-->
+            <!--num += flag;-->
+        <!--}-->
+        <!--return brr;-->
+    <!--}-->
+    <!--console.log(func(arr,num));-->
+<!--</script>-->
+<!--<script>-->
+    <!--let str1 = "hello";-->
+    <!--let str2 = "Hey";-->
+    <!--function func(str1,str2){-->
+    <!--str1.toUpperCase();-->
+    <!--str2.toUpperCase();-->
+    <!--str1.forEach(function (element){-->
+      <!--console.log(element);-->
+    <!--});-->
+    <!--str2.forEach(function (element){-->
+      <!--console.log(element);-->
+    <!--});-->
+
+<!--</script>-->
+<!--<script>-->
+    <!--let arr = [1,2,3,4,5,6];-->
+    <!--let x = 5;-->
+    <!--let brr = [];-->
+    <!--function fun(arr,x) {-->
+        <!--function randomSort(a, b) {-->
+            <!--return Math.random() > 0.5 ? -1 : 1;-->
+        <!--}-->
+        <!--console.log(arr.sort(randomSort));-->
+        <!--for(let i = 0; i< arr.length;i++){-->
+            <!--if(arr[i] === x){-->
+              <!--return i;-->
+            <!--}-->
+        <!--}-->
+    <!--}-->
+    <!--console.log(fun(arr,x));-->
+<!--</script>-->
+<!--<script>-->
+        <!--var str = "asdfgh";-->
+        <!--var arr = [];-->
+        <!--function func(str) {-->
+            <!--for(var i = str.length; i>=0;i&#45;&#45;){-->
+                <!--arr.push(str[i]);-->
+            <!--}-->
+           <!--return arr.join("");-->
+        <!--}-->
+        <!--console.log(func(str));-->
+<!--</script>-->
+<!--<script>-->
+    <!--NumberObject={-->
+        <!--"number":"123432",-->
+        <!--"你好":"傻子"-->
+    <!--};-->
+
+    <!--console.log( NumberObject.valueOf());-->
+    <!--console.log(NumberObject.你好);-->
+<!--</script>-->
+<!--<script>-->
+    <!--function person(firstname,lastname,age) {-->
+        <!--this. firstname = firstname;-->
+        <!--this .lastname = lastname;-->
+        <!--this . age = age;-->
+        <!--this. changename = changename;-->
+        <!--function changename(name) {-->
+            <!--this .lastname = name;-->
+        <!--}-->
+    <!--}-->
+    <!--mom = new person("yu","li",20);-->
+    <!--mom.changename("ru");-->
+    <!--document.write(mom.lastname);-->
+<!--</script>-->
+<!--<script>-->
+    <!--let txt =" ";-->
+    <!--let x;-->
+    <!--let persons ={-->
+        <!--"name" : "Bill ",-->
+        <!--"age" : 20,-->
+        <!--"friends" :[" yu","ling"]-->
+    <!--};-->
+    <!--for( x in persons){-->
+        <!--txt = txt + persons[x];-->
+    <!--}-->
+   <!--console.log(txt);-->
+<!--</script>-->
+
+<!--<script>-->
+    <!--var str = "12345";-->
+    <!--function reverseString(str) {;-->
+        <!--return str.split("").reverse().join("");-->
+    <!--}-->
+    <!--console.log(reverseString(str) );-->
+<!--</script>-->
+<!--<script>-->
+    <!--let arr = [1,7,5,4,3];-->
+    <!--function fun(arr) {-->
+        <!--let result = arr.reduce((per,sn) => per + sn);-->
+        <!--return result;-->
+    <!--}-->
+    <!--console.log(fun(arr));-->
+<!--</script>-->
+<!--<script>-->
+    <!--let arr = [1,5,7,4,3];-->
+    <!--let item = 6;-->
+    <!--let brr = [];-->
+    <!--function myFunction(arr,item) {-->
+        <!--for(let i = 0;i< arr.length;i++)-->
+        <!--{-->
+            <!--brr.push(arr[i]);-->
+        <!--}-->
+        <!--brr.push(item);-->
+        <!--return brr;-->
+    <!--}-->
+    <!--console.log(myFunction(arr,item));-->
+<!--</script>-->
+<!--<script>-->
+    <!--let arr = [1,5,7,4,3];-->
+    <!--let brr = [];-->
+    <!--let item = 10;-->
+    <!--function myFunction(arr,item) {-->
+        <!--for(let i = 0; i < arr.length ;i++)-->
+             <!--brr.push(arr[i]);-->
+        <!--brr.unshift(item);-->
+        <!--return brr;-->
+    <!--}-->
+    <!--console.log(myFunction(arr,item));-->
+<!--</script>-->
+<!--<script>-->
+    <!--let arr = [1,5,7,4,3];-->
+    <!--let brr = [];-->
+    <!--function myFunction(arr) {-->
+         <!--for(let i = 0;i < arr.length;i++)-->
+             <!--if(i < arr.length -1){-->
+              <!--brr.push(arr[i]);-->
+             <!--}-->
+         <!--return brr;-->
+        <!--}-->
+    <!--console.log(myFunction(arr));-->
+<!--</script>-->
+<!--<canvas id="myCanvas" width="600px" height="500px" style="border:1px solid #000000;"> </canvas>-->
+<!--<script>-->
+    <!--var canvas = document.getElementById("myCanvas");-->
+    <!--var cxt = canvas.getContext("2d");-->
+    <!--var img = new Image();-->
+    <!--img.src="image/13.jpg";-->
+    <!--cxt.drawImage(img,60,60);-->
+<!--</script>-->
+<!--<p>点击下面的按钮来执行循环，该循环会跳过 i=3 的步进。</p>-->
+<!--<button onclick="myFunction()">点击这里</button>-->
+<!--<p id="demo"> </p>-->
+<!--<script>-->
+    <!--function myFunction(){-->
+        <!--var x="",i=0;-->
+        <!--for (i=0;i<10;i++){-->
+            <!--if (i===3){-->
+                <!--continue;-->
+            <!--}-->
+            <!--x=x + "该数字为 " + i + "<br>";-->
+        <!--}-->
+        <!--document.getElementById("demo").innerHTML=x;-->
+    <!--}-->
+<!--</script>-->
+<!--<div>-->
+    <!--<p>几点钟 结束梦 他按下闹钟-->
+    <!--如往常 开始了一天生活 忙工作 忙收获 早餐吃什么-->
+    <!--他和他 维持齿轮的脉搏 汗水在他的身上化成了彩虹-->
+    <!--步伐的节奏延续生命的河流 默默在岗位战斗的每个小小英雄</p>-->
+<!--</div>-->
+</body>
+</html>

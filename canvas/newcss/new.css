@@ -1,0 +1,15 @@
+@keyframes newmove {
+    0% {color: #ea6f5a; transform: rotate(0)}
+    100%{color: #c67880;transform: rotate(-360deg)}
+}
+#myname{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    border: 3px solid ;
+    border-radius: 50%;
+    border-color: #ea6f5a #3f84cc #eed75d #31c6c6;
+    animation:newmove 3s infinite linear;
+}

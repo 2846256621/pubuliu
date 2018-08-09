@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>七屏百叶窗</title>
+    <style type="text/css">
+        *{
+            padding:0;
+            margin:0;
+        }
+        #container{
+            width:850px;
+            height:370px;
+            margin:20px auto;
+            background:#000;
+            padding:10px 10px;
+        }
+        #container .title{
+            height:36px;
+            width:850px;
+        }
+        #container .title img{
+            width:100%;
+            height:36px;
+        }
+        #imgs{
+            width:850px;
+            height:336px;
+            margin:0 auto;
+            overflow:hidden;
+            float:left;
+        }
+        #imgs div{
+            width:50px;
+            overflow:hidden;
+            height:336px;
+            float:left;
+        }
+        #imgs div img{
+            width:590px;
+            height:336px;
+        }
+    </style>
+    <script type="text/javascript">
+        /*使用流布局，宽度会自动撑开父框*/
+        var moveFlag = 0,timer=0,current=null;
+        function getId(id){//根据元素的id获取id
+            return document.getElementById(id);
+        }
+        function createElement(){
+            var imgs = getId("imgs");
+            var img = null,div=null;
+            for(var i=1;i<=6;i++){
+                div = document.createElement("div");//创建存放图片的div,初始化宽度，越过部分隐藏
+                div.style.width = "140px";
+                img = document.createElement("img");//创建图片标签，并设置src，
+                img.src = "img/"+i+".jpg";
+                if(i>0){//除第一张图片都设置一个左边框
+                    img.style.borderLeft = "2px solid #000";
+                }
+                div.appendChild(img);//将元素添加到父框中
+                imgs.appendChild(div);//将元素添加到父框中
+            }
+            addEvent();
+        }
+        function addEvent(){//添加事件
+            var container = getId("imgs");
+            var divs = container.getElementsByTagName("div");
+            for(var i=0;i<divs.length;i++){
+                divs[i].index = i;//为每一个div设置一个索引值
+                timer = 0;
+                divs[i].onmouseover = function(){
+                    var index=this.index;//使index值为当前触发事件的div的索引值
+                    current=this;
+                    function move(){
+                        window.clearTimeout(timer);
+                        moveFlag = 1;
+                        var sum = 0;
+                        for(var j=0;j<divs.length;j++){
+                            if(j!==index){//非当前对象宽度减少
+                                var width = parseInt((divs[j].currentStyle||window.getComputedStyle(divs[j],null))["width"]);
+                                if(width>50){//宽度大于50就减小，否则不动
+                                    divs[j].style.width = width-10+"px";
+                                }//除当前div外的div的宽度
+                                sum+=parseInt((divs[j].currentStyle||window.getComputedStyle(divs[j],null))["width"]);
+                            }
+                        }
+                        //当前div的宽度为总宽度减去其它div的宽度和
+                        divs[index].style.width = 840-sum+"px";
+                        if(840-sum<590){//当前div的宽度未达到标准，继承调用计时器
+                            timer = setTimeout(move,100);
+                        }else{
+                            return ;
+                        }
+                    }
+                    move();
+                }
+
+            }
+        }
+        window.onmousemove = function(e){
+            var e = e || window.event;//事件兼容写法
+            var cWidth = getId("container").offsetWidth;//获取container的带边框的宽度
+            var cHeight = getId("container").offsetHeight;//获取container的带边框的高度
+            var wWidth = document.body.clientWidth;
+            var wHeight = 20;
+            var left =(wWidth - cWidth)/2;//获取container与浏览器左边界的值
+            if((e.clientX<left)||(e.clientX>(left+cWidth))||(e.clientY<wHeight)||(e.clientY>wHeight+cHeight)){//光标离开container区域
+                if(moveFlag==1){
+                    window.clearTimeout(timer);
+                    var divs = getId("imgs").getElementsByTagName("div");
+                    for(var i=0;i<divs.length;i++){
+                       divs[i].style.width = "140px";
+                    }
+                    moveFlag = 0;
+                }
+            }
+        };
+        function getStyle(_obj){
+            if(obj.currentStyle){
+                return obj.currentStyle;
+            }else{
+                return window.getComputedStyle(obj,null);
+            }
+        }
+        window.onload = function(){
+            createElement();
+        }
+    </script>
+</head>
+<body>
+<div id="container">
+    <div class="title">
+        <img src="img/1.jpg"/>
+    </div>
+    <div id="imgs"></div>
+</div>
+</body>
+</html>
